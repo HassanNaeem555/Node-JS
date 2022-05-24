@@ -1,3 +1,5 @@
+// Node Js works on EventDriven Architecture
+
 import EventEmitter from "events";
 
 class MyEmitter extends EventEmitter {}
@@ -12,3 +14,5 @@ myEmitter.on("WaterFull", () => {
 });
 
 console.log("JavaScript is running");
+
+myEmitter.emit("WaterFull");
